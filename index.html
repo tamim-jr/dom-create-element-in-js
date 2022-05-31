@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM- Document Object Model</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="click"> <a href="https://www.youtube.com">YouTube</a></button>
+    </div>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ratione quod vel saepe quae sed!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis maxime autem minima alias obcaecati, eveniet consectetur neque dolor quas minus sit adipisci error inventore sint dolorum. Placeat facere ut quia exercitationem sequi harum perspiciatis reiciendis voluptas similique, consequuntur, ex, obcaecati deleniti enim at minima?</p>
+    </div>
+    <script>
+        // let elem = document.getElementById("click");
+        // console.log(elem);
+        // let elemClass = document.getElementsByClassName("container");
+        // console.log(elemClass);
+        // elemClass[0].style.background = "Yellow";
+        // elemClass[0].style.border = "2px solid green";
+        // elemClass[1].style.background = "blue";
+        // elemClass[1].style.border = "2px solid green";
+        // elemClass[1].classList.add("text-bg");
+        // console.log(elem.innerHTML);
+        // create element
+        tn = document.getElementsByTagName('div');
+        console.log(tn);
+        createdElement = document.createElement('p');
+        createdElement.innerText = "This text written by JS";
+        tn[0].appendChild(createdElement);
+    </script>
+
+</body>
+
+</html>
